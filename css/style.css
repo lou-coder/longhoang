@@ -1386,7 +1386,7 @@ i.home-product-item__like-icon-empty {
 
 }
 
-.blog__news .blog__news-list .blog__news-item{
+.blog__news .blog__news-list .blog__news-item1{
     width: 400px;
     height: 267px; 
     position: relative;
@@ -1394,13 +1394,40 @@ i.home-product-item__like-icon-empty {
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.4)) ,url(../image/man01.jpg);
 }
 
-.blog__news .blog__news-list .blog__news-item a {
+.blog__news .blog__news-list .blog__news-item2{
+    width: 400px;
+    height: 267px; 
+    position: relative;
+    list-style: none;    
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.4)) ,url(../image/man02.jpg);
+}
+
+.blog__news .blog__news-list .blog__news-item3{
+    width: 400px;
+    height: 267px; 
+    position: relative;
+    list-style: none;    
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.4)) ,url(../image/man03.jpg);
+}
+
+.blog__news-item1 a,
+.blog__news-item2 a,
+.blog__news-item3 a{
     text-decoration: none;
 }
 
-.blog__news .blog__news-list .blog__news-item a h4 {
+.blog__news-item1 a h4,
+.blog__news-item2 a h4,
+.blog__news-item3 a h4{
     color: #fff;
     font-size: 19px;
     position: absolute;
@@ -1410,11 +1437,15 @@ i.home-product-item__like-icon-empty {
 
 }
 
-.blog__news .blog__news-list .blog__news-item a h4:hover {
+.blog__news-item1 a h4:hover,
+.blog__news-item2 a h4:hover,
+.blog__news-item3 a h4:hover{
     color: #C69103;
 }
 
-.blog__news .blog__news-list .blog__news-item a p {
+.blog__news-item1 a p,
+.blog__news-item2 a p,
+.blog__news-item3 a p{
     color: #fff;
     font-size: 15px;
     position: absolute;
