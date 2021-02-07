@@ -8,6 +8,7 @@ var connect2 = document.querySelector('#connect_popup2')
 var exit1 = document.querySelectorAll('.au-form__controls-back')[0]
 var exit2 = document.querySelectorAll('.au-form__controls-back')[1]
 var loginRegister_responsive = document.querySelector('#login-register__mobile-tablet') 
+var exitByOverlay = document.querySelector('.modal__overlay')
 
 loginRegister_Btn.addEventListener('click', function() {
   modal.style.display = 'flex';
@@ -50,6 +51,12 @@ connect2.addEventListener('click', function() {
   popupLogin.style.display = 'none';
 })
 
+//thoát form khi click ra bên ngoài 
+exitByOverlay.addEventListener('click', function() {
+  modal.style.display = 'none';
+  popupRegister.style.display = 'none';
+  popupLogin.style.display = 'none';
+})
 
 //slide
 
