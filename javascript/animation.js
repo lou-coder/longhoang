@@ -7,12 +7,19 @@ var connect1 = document.querySelector('#connect_popup1')
 var connect2 = document.querySelector('#connect_popup2')
 var exit1 = document.querySelectorAll('.au-form__controls-back')[0]
 var exit2 = document.querySelectorAll('.au-form__controls-back')[1]
-
+var loginRegister_responsive = document.querySelector('#login-register__mobile-tablet') 
 
 loginRegister_Btn.addEventListener('click', function() {
   modal.style.display = 'flex';
   popupRegister.style.display = 'block';
  
+})
+
+//tạo sự kiện click nút login register cho responsive
+
+loginRegister_responsive.addEventListener('click', function() {
+  modal.style.display = 'flex';
+  popupRegister.style.display = 'block'
 })
 
 //xây dựng nút thoát register form
