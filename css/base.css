@@ -127,7 +127,7 @@ body {
     display: flex;
     animation: fadeIn linear 0.1s;
     display: none;
-    z-index: 1;
+    z-index: 101;
 }
 
 .modal__overlay {
@@ -143,7 +143,7 @@ body {
     --growth-to: 1;
     margin: auto;
     position: relative;
-    z-index: 1;
+    z-index: 101;
     animation: growth linear 0.1s;
 }
 
