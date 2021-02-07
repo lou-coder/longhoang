@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch fashion</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script type="text/javascript" src="./javascript/animation.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <header id="header">
+        <!--Nav-->
+        <nav class="hide-on-mobile-tablet">
+            <div class="layout__navbar">
+                <ul class="menu1">
+                    <li class="menu1-item"><a href="">HOME</a></li>
+                    <li class="menu1-item"><a href="">PROFILE</a></li>
+                    <li class="menu1-item"><a href="">CONTACT US</a></li>
+                    <li class="menu1-item"><a href="">ABOUT US</a></li>
+                </ul>
+
+                <ul class="menu2">
+                    <li id="login_register" class="menu2-item">
+                        <i class="fas fa-sign-in-alt"></i>
+                        LOGIN/REGISTER
+                    </li>
+                    <li class="menu2-item"><a href="">
+                        <i class="far fa-heart"></i>
+                        FAVORITE
+                    </a></li>
+                    <li class="menu2-item">
+                      <div class="menu-icon">
+                       <a href=""><i class="menu-icon-socials fab fa-twitter"></i></a>
+                       <a href=""><i class="menu-icon-socials fab fa-facebook"></i></a>
+                       <a href=""><i class="menu-icon-socials fab fa-instagram"></i></a>
+                      </div>  
+                    </li>
+                </ul>
+               
+            </div>
+        </nav>
+
+        <!--modal layout-->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+
+
+                <!--register form-->
+                <div id="popupRegister" class="au-form1">
+                  <div class="au-form__container">
+                      <div class="au-form__header">
+                          <h3 class="au-form__heading">ĐĂNG KÝ</h3>
+                          <span id="connect_popup1" href="" class="au-form__switch-btn">ĐĂNG NHẬP</span>
+                      </div>
+
+                      <div class="au-form__form">
+                          <div class="au-form__group">
+                             <input type="text" class="au-form__input" placeholder="Nhập Email của bạn">
+                          </div>
+                          <div class="au-form__group">
+                            <input type="password" class="au-form__input" placeholder="Nhập mật khẩu của bạn">
+                         </div>
+                         <div class="au-form__group">
+                            <input type="password" class="au-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                         </div>
+                      </div>
+
+                      <div class="au-form__aside">
+                          <p class="au-form__policy-text">
+                              Bằng việc đăng ký, bạn đồng ý với KINGSMAN về
+                              <a href="" class="au-form__text-link">Điều khoản dịch vụ</a> &
+                              <a href="" class="au-form__text-link">Chính sách bảo mật</a>
+                          </p>
+                      </div>
+
+                      <div class="au-form__controls">
+                          <button class="btn btn--nomal au-form__controls-back">TRỞ LẠI</button>
+                          <button class="btn btn--primary">ĐĂNG KÝ</button>
+                      </div>
+                  </div>
+
+                  <div class="au-form__socials">
+                      <a href="" class="au-form__socials--facebook">
+                        <i class="au-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="au-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                      </a>
+
+                      <a href="" class="au-form__socials--google">
+                        <i class="au-form__socials-icon fab fa-google"></i>
+                        <span class="au-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                      </a>
+                  </div>
+                    
+                </div>
+
+                <!--login form-->
+
+                <div id="popupLogin" class="au-form2">
+                    <div class="au-form__container">
+                        <div class="au-form__header">
+                            <h3 class="au-form__heading">ĐĂNG NHẬP</h3>
+                            <span id="connect_popup2" href="" class="au-form__switch-btn">ĐĂNG KÝ</span>
+                        </div>
+  
+                        <div class="au-form__form">
+                            <div class="au-form__group">
+                               <input type="text" class="au-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="au-form__group">
+                              <input type="password" class="au-form__input" placeholder="Nhập mật khẩu của bạn">
+                           </div>
+                        </div>
+
+                        <div class="au-form__aside">
+                            <div class="au-form__help">
+                              <a href="" class="au-form__help-link au-form__help-forgot">Quên mật khẩu</a>
+                               <span class="au-form__help-separate"></span>
+                              <a href="" class="au-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+  
+                        <div class="au-form__controls">
+                            <button class="btn btn--nomal au-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </div>
+  
+                    <div class="au-form__socials">
+                        <a href="" class="au-form__socials--facebook">
+                          <i class="au-form__socials-icon fab fa-facebook-square"></i>
+                          <span class="au-form__socials-title">
+                              Kết nối với Facebook
+                          </span>
+                        </a>
+
+                        <a href="" class="au-form__socials--google">
+                            <i class="au-form__socials-icon fab fa-google"></i>
+                            <span class="au-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                          </a>
+                    </div>
+                      
+                </div>
+
+                <!--add to cart product-->
+
+                
+            </div>
+        </div>
+
+        <!--search,logo,phone-->
+        <div class="trademark">
+           <div class="search hide-on-mobile-tablet">
+              <div class="search__wrap">
+                <input type="text" class="search__input" placeholder="Touch to search for products!">
+                <i class="search__input-icon fas fa-search"></i>
+              </div>
+            </div>
+        <!--responsive-->
+        <div class="navbar-responsive">
+          <label for="input-mobile-tablet-responsive"><i class="bars-responsive-icon fas fa-bars"></i></label>>
+        </div>
+
+         <!--responsive-->
+           <div class="logo">
+              <img src="./image/kingsman7.png" alt="">
+              <p>___MAN WITH ACCESSORIES___</p>
+           </div>
+         <!--responsive-->
+        <div class="shopping-responsive">
+          <a href="" class="basket-responsive"><i class="basket-responsive-icon fas fa-shopping-basket"></i></a>
+        </div>
+           <!--responsive-->
+           <div class="phone__support hide-on-mobile-tablet">
+             <div class="phone__support-wrap">
+                <a href=""><i class="phone__support-icon fas fa-phone-volume"></i></a>
+                <div class="phone__support-text">
+                   <p class="text__support">Supporter</p>
+                   <p class="number__support">0123-456-789</p> 
+                </div> 
+                <a href=""><i class="phone__support-icon-help far fa-question-circle"></i></a>
+             </div>
+            
+           </div>
+        </div>
+
+        <input type="checkbox" class="input-checkbox-responsive" name="" id="input-mobile-tablet-responsive">
+
+        <!--overlay responsive-->
+        <label for="input-mobile-tablet-responsive" class="nav__overlay-responsive"></label>>
+
+        <!--nav mobile tablet responsive-->
+        <div class="menu-mobile-tablet">
+          <label for="input-mobile-tablet-responsive" class="close-mobile-tablet">
+            <i class="fas fa-times"></i>
+          </label>
+          <ul class="list-mobile-tablet">
+            <li class="item-mobile-tablet">
+              <input type="text" placeholder="search...">
+              <i class="search-responsive-icon fas fa-search"></i>
+            </li>
+            <li>
+              <a href="" class="item-mobile-tablet">PROFILE</a>
+            </li>
+            <li>
+              <a href="" class="item-mobile-tablet">CONTACT US</a>
+            </li>
+            <li>
+              <a href="" class="item-mobile-tablet">ABOUT US</a>
+            </li>
+            <li>
+              <a href="" class="item-mobile-tablet">FAVORITE</a>
+            </li>
+            <li>
+              <span id= "login-register__mobile-tablet" class="item-mobile-tablet">LOGIN/REGISTER</span>
+            </li>
+          </ul>
+        </div>
+
+
+        <!--DROP MENU-->
+        <div class="drop-menu hide-on-mobile-tablet">
+            <ul class="drop-menu__options">
+                <li class="drop-menu__item">
+                    WATCH
+                    <i class="fas fa-angle-down"></i>
+                
+                    <div class="drop-menu__cost">
+                        <ul>
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Cheap 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Affordable 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Luxurious 
+                            </li>
+                        </ul> 
+                    </div>
+                </li>
+                
+                <li class="drop-menu__item">
+                    RINGS
+                    <i class="fas fa-angle-down"></i>
+                    <div class="drop-menu__cost">
+                        <ul>
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Cheap 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Affordable 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Luxurious 
+                            </li>
+                        </ul> 
+                      </div>
+                </li>
+                <li class="drop-menu__item">
+                    BRACELET
+                    <i class="fas fa-angle-down"></i>
+                    <div class="drop-menu__cost">
+                        <ul>
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Cheap 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Affordable 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Luxurious 
+                            </li>
+                        </ul>  
+                      </div>
+                </li>
+                <li class="drop-menu__item">
+                    GLASSES
+                    <i class="fas fa-angle-down"></i>
+                    <div class="drop-menu__cost">
+                        <ul>
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Cheap 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Affordable 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Luxurious 
+                            </li>
+                        </ul> 
+                      </div>
+                </li>
+                <li class="drop-menu__item">
+                    GEMSTONE
+                    <i class="fas fa-angle-down"></i>
+                    <div class="drop-menu__cost">
+                        <ul>
+                          <li class="drop-menu__cost-level">
+                            <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                            Cheap 
+                          </li>
+  
+                          <li class="drop-menu__cost-level">
+                            <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Affordable 
+                          </li>
+  
+                          <li class="drop-menu__cost-level">
+                            <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Luxurious 
+                          </li>
+                      </ul>  
+                      </div>
+                </li>
+                <li class="drop-menu__item">
+                    NECKLACE
+                    <i class="fas fa-angle-down"></i>
+                    <div class="drop-menu__cost">
+                        <ul>
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                              Cheap 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Affordable 
+                            </li>
+    
+                            <li class="drop-menu__cost-level">
+                              <i class="drop-menu__cost-icon fas fa-caret-right"></i>
+                                Luxurious 
+                            </li>
+                        </ul> 
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </header>   
+
+        <!--slide-->
+     <div class="slider">
+       <div class="myslider fade" style="display: block;">
+         <div class="slide-text">
+           <h1>Remember!</h1>
+         <p>Lorem ipsum dolor <br> sit amet consectetur, 
+          adipisicing elit. Aperiam amet suscipit tempore?.</p>
+         </div> 
+          <img src="./image/slide1-v2.jpg" class="slide-img" style="width: 100%; height: 100%;">
+       </div>
+
+       <div class="myslider fade">
+        <div class="slide-text">
+          <h1>Manners</h1>
+        <p>Lorem ipsum dolor <br> sit amet consectetur, 
+         adipisicing elit. Aperiam amet suscipit tempore?.</p>
+        </div> 
+         <img src="./image/slide2-v2.jpg" class="slide-img" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslider fade">
+        <div class="slide-text">
+          <h1>Maketh</h1>
+        <p>Lorem ipsum dolor <br> sit amet consectetur, 
+         adipisicing elit. Aperiam amet suscipit tempore?.</p>
+        </div> 
+         <img src="./image/slide3-v2.jpg" class="slide-img" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslider fade">
+        <div class="slide-text">
+          <h1>Man!</h1>
+        <p>Lorem ipsum dolor <br> sit amet consectetur, 
+         adipisicing elit. Aperiam amet suscipit tempore?.</p>
+        </div> 
+         <img src="./image/slide4-v2.jpg" class="slide-img" style="width: 100%; height: 100%;">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="Text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+     </div>
+
+
+     <!--tên các danh mục sản phẩm-->
+     <div class="name__main-product grid wide">
+       <ul class="name__main-product-list row">
+         <li class="name__main-product-item s-12">
+           <div class="main-product__box">
+             <span class="main-product__box-item1"></span>
+             <span class="main-product__box-name">
+               <h1>Watches</h1>
+               <span>50 ITEMS</span>
+             </span>
+            </div>
+         </li>
+         <li class="name__main-product-item s-12">
+          <div class="main-product__box">
+            <span class="main-product__box-item2"></span>
+            <span class="main-product__box-name">
+              <h1>Bracelet</h1>
+              <span>30 ITEMS</span>
+            </span>
+           </div>
+         </li>
+         <li class="name__main-product-item s-12">
+          <div class="main-product__box">
+            <span class="main-product__box-item3"></span>
+            <span class="main-product__box-name">
+              <h1>Ring</h1>
+              <span>40 ITEMS</span>
+            </span>
+           </div>
+         </li>
+         <li class="name__main-product-item s-12">
+          <div class="main-product__box">
+            <span class="main-product__box-item4"></span>
+            <span class="main-product__box-name">
+              <h1>Gemstone</h1>
+              <span>15 ITEMS</span>
+            </span>
+           </div>
+         </li>
+       </ul>
+     </div>
+
+     <!--ngăn cách-->
+     <div class="separator">
+       <span class="separator-line"></span>
+     </div>
+
+     <!--danh mục sản phẩm-->
+     <div class="category__container ">
+       <div class="grid wide">
+         <div class="row">
+         <div class="grid__column-2 l-0 m-0 s-0">
+           <nav class="category">
+             <h3 class="category__heading">
+         
+               PRODUCT CATEGORIES
+             </h3>
+
+             <ul class="category-list">
+              <div class="accordion__category">
+               <li class="category-item category-item--active">
+                <a href="#" class="category-item__link">WATCH</a>
+               </li>
+               <div class="category-item__price-accordion">
+                <ul>
+                    <li class="category-accordion-price">
+                      <i class="category-accordion-icon fas fa-caret-right"></i>
+                      Cheap 
+                    </li>
+
+                    <li class="category-accordion-price">
+                      <i class="category-accordion-icon fas fa-caret-right"></i>
+                        Affordable 
+                    </li>
+
+                    <li class="category-accordion-price">
+                      <i class="category-accordion-icon fas fa-caret-right"></i>
+                        Luxurious 
+                    </li>
+                </ul> 
+               </div>                 
+              </div>
+
+              <div class="accordion__category">
+                <li class="category-item category-item--active">
+                 <a href="#" class="category-item__link">RINGS</a>
+                </li>
+                <div class="category-item__price-accordion">
+                 <ul>
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                       Cheap 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Affordable 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Luxurious 
+                     </li>
+                 </ul> 
+                </div>                 
+               </div>
+
+               <div class="accordion__category">
+                <li class="category-item category-item--active">
+                 <a href="#" class="category-item__link">BRACELET</a>
+                </li>
+                <div class="category-item__price-accordion">
+                 <ul>
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                       Cheap 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Affordable 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Luxurious 
+                     </li>
+                 </ul> 
+                </div>                 
+               </div>
+
+               <div class="accordion__category">
+                <li class="category-item category-item--active">
+                 <a href="#" class="category-item__link">GLASSES</a>
+                </li>
+                <div class="category-item__price-accordion">
+                 <ul>
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                       Cheap 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Affordable 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Luxurious 
+                     </li>
+                 </ul> 
+                </div>                 
+               </div>
+
+               <div class="accordion__category">
+                <li class="category-item category-item--active">
+                 <a href="#" class="category-item__link">GEMSTONE</a>
+                </li>
+                <div class="category-item__price-accordion">
+                 <ul>
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                       Cheap 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Affordable 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Luxurious 
+                     </li>
+                 </ul> 
+                </div>                 
+               </div>
+
+               <div class="accordion__category">
+                <li class="category-item category-item--active">
+                 <a href="#" class="category-item__link">NECKLACE</a>
+                </li>
+                <div class="category-item__price-accordion">
+                 <ul>
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                       Cheap 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Affordable 
+                     </li>
+ 
+                     <li class="category-accordion-price">
+                       <i class="category-accordion-icon fas fa-caret-right"></i>
+                         Luxurious 
+                     </li>
+                 </ul> 
+                </div>                 
+               </div>
+             </ul>
+           </nav>
+         </div>
+
+         <div class="grid__column-10 l-12">
+           <div class="home-filter hide-on-mobile-tablet">
+             <span class="home-filter__label">
+              Filter Products :
+             </span>
+             <button class="btn-filter">Popular</button>
+             <button class="btn-filter">Latest</button>
+             <button class="btn-filter">Best Selling</button>
+
+             <div class="home-filter__price">
+               <span class="home-filter__price-title">Price</span>
+               <i class="fas fa-angle-down"></i>
+               <ul class="home-filter__price-list">
+                 <li class="home-filter__price-options">
+                  Low to High
+                  <i class="fas fa-arrow-up"></i>
+                 </li>
+                 <li class="home-filter__price-options">
+                  High to Low
+                  <i class="fas fa-arrow-down"></i>
+                 </li>
+               </ul>
+             </div>
+
+             <div class="home-filter__page">
+               <span class="home-filter__page-number">
+                 <span class="home-filter__page-current">1</span>
+                 /15
+               </span>
+
+               <div class="home-filter__page-control">
+                 <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                  <i class=" home-filter__page-icon fas fa-angle-left"></i>
+                 </a>
+                 <a href="" class="home-filter__page-btn">
+                  <i class=" home-filter__page-icon fas fa-angle-right"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+
+           <!--grid--row--column-->
+           <div class="home-product grid wide">
+             <div class="row">
+               <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                 <a href="#" class="home-product__link-wrap">
+                <div class="home-product-item">
+                   <div class="home-product-item__img" style="background-image: url(./image/product1.jpg);"></div>
+                   <h4 class="home-product-item__name">PRODUCT-01 </h4>
+                   <div class="home-product-item__price">
+                     <span class="home-product-item__price-old">5.000$</span>
+                     <span class="home-product-item__price-current">4.000$</span>
+                    </div>
+                    <div class="home-product-item__action">
+                      <span class="home-product-item__like home-product-item__like--liked">
+                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                      </span>
+                      <div class="home-product-item__rating">
+                        <i class="home-product-item__star--gold fas fa-star"></i>
+                        <i class="home-product-item__star--gold fas fa-star"></i>
+                        <i class="home-product-item__star--gold fas fa-star"></i>
+                        <i class="home-product-item__star--gold fas fa-star"></i>
+                        <i class="home-product-item__star--gold fas fa-star"></i>
+                      </div>
+                    </div>
+                    
+                    <div class="product-add-to-cart">
+                      <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                    </div>
+
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__brand">Kingsman</span>
+                      <span class="home-product-item__origin-name">England</span>
+                    </div>
+                    <div class="home-product-item__favourite">
+                      <i class="fas fa-check"></i>
+                      <span>Favourite</span>
+                    </div>
+                    <div class="home-product-item__sale-off">
+                      <span class="home-product-item__sale-off-percent">-20%</span>
+                    </div>
+                </div>                   
+                 </a>
+
+               </div>
+
+               <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product2.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-02222222222222222222222 </h4>
+                  <div class="home-product-item__price">
+                    <span class="home-product-item__price-current">3.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold far fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <!--<div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>--> 
+                   <!--<div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-20%</span>
+                   </div>-->
+               </div>                   
+                </a>
+
+              </div> 
+
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product3.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-03 </h4>
+                  <div class="home-product-item__price">
+                    <!--<span class="home-product-item__price-old">5.000$</span>-->
+                    <span class="home-product-item__price-current">6.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                 <!--<div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-20%</span>
+                   </div>-->  
+               </div>                   
+                </a>
+
+              </div>
+
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product4.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-04 </h4>
+                  <div class="home-product-item__price">
+                    <span class="home-product-item__price-old">5.000$</span>
+                    <span class="home-product-item__price-current">4.500$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                   <div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-10%</span>
+                   </div>
+               </div>                   
+                </a>
+
+              </div>
+
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product5.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-05 </h4>
+                  <div class="home-product-item__price">
+                    <!--<span class="home-product-item__price-old">5.000$</span>-->
+                    <span class="home-product-item__price-current">8.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                   <!--<div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-20%</span>
+                   </div>-->
+               </div>                   
+                </a>
+
+              </div>
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product6.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-06 </h4>
+                  <div class="home-product-item__price">
+                    <!--<span class="home-product-item__price-old">5.000$</span>-->
+                    <span class="home-product-item__price-current">10.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                  <!-- <div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-20%</span>
+                   </div>-->
+               </div>                   
+                </a>
+
+              </div>
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product7.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-07 </h4>
+                  <div class="home-product-item__price">
+                    <span class="home-product-item__price-old">8.000$</span>
+                    <span class="home-product-item__price-current">6.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold far fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                   <div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-25%</span>
+                   </div>
+               </div>                   
+                </a>
+
+              </div>
+
+              <div class="grid__column-3 border-product col l-3 m-4 s-6">
+                <a href="#" class="home-product__link-wrap">
+               <div class="home-product-item">
+                  <div class="home-product-item__img" style="background-image: url(./image/product8.jpg);"></div>
+                  <h4 class="home-product-item__name">PRODUCT-08 </h4>
+                  <div class="home-product-item__price">
+                    <!--<span class="home-product-item__price-old">5.000$</span>-->
+                    <span class="home-product-item__price-current">11.000$</span>
+                   </div>
+                   <div class="home-product-item__action">
+                     <span class="home-product-item__like home-product-item__like--liked">
+                       <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                       <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                     </span>
+                     <div class="home-product-item__rating">
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                       <i class="home-product-item__star--gold fas fa-star"></i>
+                     </div>
+                   </div>
+                   
+                   <div class="product-add-to-cart">
+                     <a href="" class="product-add-to-cart__btn">ADD TO CART</a>
+                   </div>
+
+                   <div class="home-product-item__origin">
+                     <span class="home-product-item__brand">Kingsman</span>
+                     <span class="home-product-item__origin-name">England</span>
+                   </div>
+                   <div class="home-product-item__favourite">
+                     <i class="fas fa-check"></i>
+                     <span>Favourite</span>
+                   </div>
+                   <!--<div class="home-product-item__sale-off">
+                     <span class="home-product-item__sale-off-percent">-20%</span>
+                   </div>-->
+               </div>                   
+                </a>
+
+              </div>
+
+              
+
+             </div>
+           </div>
+
+         </div>
+       </div>
+       </div>
+       
+     </div>
+
+
+     <div class="separator">
+      <span class="separator-line"></span>
+    </div>
+
+
+    <!--blog-->
+    <div class="blog">
+      <div class="blog__header">
+        <h1 class="blog-title">Blog</h1>
+        <div class="blog__control-page">
+          <a href="#"><i class="blog__control-page-icon fas fa-angle-left"></i></a>
+          <a href="#"><i class="blog__control-page-icon fas fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="blog__news grid wide">
+        <ul class="blog__news-list">
+          <li class="blog__news-item1 m-6"><a href="#">
+            <h4>Remember, Alway be a man!</h4>
+            <p><i class="fas fa-calendar-alt"></i>
+             January 21,2021
+            </p>
+          </a></li>
+
+          <li class="blog__news-item2 m-6 s-0" style=" background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.4)) ,url(../image/man02.jpg);"><a href="#">
+            <h4>Remember, Alway be a man!</h4>
+            <p><i class="fas fa-calendar-alt"></i>
+             January 21,2021
+            </p>
+          </a></li>
+
+          <li class="blog__news-item3 l-0 m-0 s-0" style=" background-image: linear-gradient(rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.4)) ,url(../image/man03.jpg);"><a href="#">
+            <h4>Remember, Alway be a man!</h4>
+            <p><i class="fas fa-calendar-alt"></i>
+             January 21,2021
+            </p>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="separator">
+      <span class="separator-line"></span>
+    </div>
+
+  <!--footer-->
+
+  <footer>
+    <div class="footer">
+      <div class="footer-logo">
+        <img src="./image/kingsman7.png" alt="">
+        <p>___MAN WITH ACCESSORIES___</p>
+        <p>Manner Maketh Man!</p>
+      </div>
+
+      <div class="footer-Feature-products m-0 s-0">
+        <h2>Feature Products</h2>
+        <ul class="footer-Feature-products__list">
+          <li class="footer-Feature-products__item">
+            <img src="./image/feature01.jpg" alt="">
+            <div class="Feature-product__text">
+              <h4>PRODUCT 01</h4>
+              <div class="Feature-product__rating">
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i> 
+              </div>
+              <p class="Feature-product__price-old">10.000$</p>
+              <p class="Feature-product__price-current">9000$</p>
+            </div>
+          </li>
+
+          <li class="footer-Feature-products__item">
+            <img src="./image/feature02.jpg" alt="">
+            <div class="Feature-product__text">
+              <h4>PRODUCT 02</h4>
+              <div class="Feature-product__rating">
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold far fa-star"></i> 
+              </div>
+              <p class="Feature-product__price-old">10.000$</p>
+              <p class="Feature-product__price-current">9000$</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-Top-rated-products s-0"> 
+        <h2>Top rated Products</h2>
+        <ul class="footer-Top-rated-products__list">
+          <li class="footer-Top-rated-products__item">
+            <img src="./image/top01.jpg" alt="">
+            <div class="Top-rated-product__text">
+              <h4>PRODUCT 01</h4>
+              <div class="Top-rated-product__rating">
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i> 
+              </div>
+              <p class="Top-rated-product__price-current">8000$</p>
+            </div>
+          </li>
+
+          <li class="footer-Top-rated-products__item">
+            <img src="./image/top02.jpg" alt="">
+            <div class="Top-rated-product__text">
+              <h4>PRODUCT 02</h4>
+              <div class="Top-rated-product__rating">
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i> 
+              </div>
+              <p class="Top-rated-product__price-current">7000$</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h2>Contact Us ?</h2>
+        <div class="footer-contact__social">
+          <a href=""><i class="footer-contact__social--icon fab fa-facebook"></i></a>
+          <a href=""><i class="footer-contact__social--icon fab fa-twitter"></i></a>
+          <a href=""><i class="footer-contact__social--icon fab fa-instagram"></i></a>
+        </div>
+
+        <div class="footer-contact__email">
+          <input type="email" placeholder="Email Address">
+          <button class="footer-contact__email--btn">Subcribe</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <hr style="border-color: #414141; border-top: 1px  #414141;">
+    
+  <div class="footer-happy-engding">
+    <div class="footer-copyright">
+      <p><i class="far fa-copyright"></i>
+      2021-KINGSMAN. MAN WITH FASHION
+      </p>
+    </div>
+    <div class="footer-privacy-policy">
+      <ul class="footer-privacy-policy__list">
+        <li class="footer-privacy-policy__item"><a href="">PRIVACY POLICY</a></li>
+        <li class="footer-privacy-policy__item"><a href="">MY ACCOUNT</a></li>
+        <li class="footer-privacy-policy__item"><a href="">FAQS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--cart and go header fixed-->
+  <div class="cart-fixed hide-on-mobile-tablet">
+    <a href=""><i class="cart-fixed-icon fas fa-shopping-basket"></i></a>
+    <a href="#header"><i class="go-header-fixed-icon fas fa-caret-up"></i></a>
+  </div>
+
+</body>
+</html>
