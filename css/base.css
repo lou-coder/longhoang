@@ -143,7 +143,7 @@ body {
     --growth-to: 1;
     margin: auto;
     position: relative;
-    z-index: 101;
+    z-index: 102;
     animation: growth linear 0.1s;
 }
 
