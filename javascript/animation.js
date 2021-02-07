@@ -51,7 +51,7 @@ connect2.addEventListener('click', function() {
   popupLogin.style.display = 'none';
 })
 
-//thoát form khi click ra bên ngoài 
+//thoát form khi click ra bên ngoài
 exitByOverlay.addEventListener('click', function() {
   modal.style.display = 'none';
   popupRegister.style.display = 'none';
